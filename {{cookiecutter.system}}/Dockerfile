@@ -15,7 +15,8 @@ RUN apt update \
 FROM dependencies AS builder
 
 # Install build tools and compilers
-RUN apt install -y --no-install-recommends \
+RUN apt update \
+    && apt install -y --no-install-recommends \
     build-essential \
     gcc \
     g++ \
@@ -38,7 +39,8 @@ RUN uv sync --frozen --no-dev
 FROM builder AS devel
 
 # Install development tools and utilities
-RUN apt install -y --no-install-recommends \
+RUN apt update \
+    && apt install -y --no-install-recommends \
     vim \
     nano \
     less \
@@ -54,7 +56,8 @@ RUN apt install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Install AWS CLI v2
-RUN apt install -y --no-install-recommends \
+RUN apt update \
+    && apt install -y --no-install-recommends \
     curl \
     unzip \
     && curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" \
