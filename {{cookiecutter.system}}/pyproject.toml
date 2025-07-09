@@ -23,9 +23,9 @@ dev = [
   "types-redis>=4.6.0",
 ]
 
-[build-system]
-requires      = ["hatchling"]
-build-backend = "hatchling.build"
+# [build-system]
+# requires      = ["hatchling"]
+# build-backend = "hatchling.build"
 
 [tool.uv]
 dev-dependencies = [
