@@ -1,7 +1,7 @@
 # Multi-stage Dockerfile for Python development with VS Code dev containers
 
 # Stage 1: Core dependencies layer
-FROM python:3.12-slim-bookworm AS dependencies
+FROM python:3.13-slim-bookworm AS dependencies
 
 # Install system dependencies including librdkafka for Kafka support
 RUN apt update \
