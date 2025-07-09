@@ -5,7 +5,6 @@ services:
     build:
       context: ..
       target: devel
-      dockerfile: ../Dockerfile
     container_name: {{ cookiecutter.system }}-dev-app
     depends_on:
       db:
