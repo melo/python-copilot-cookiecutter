@@ -23,7 +23,7 @@ services:
       - PYTHONPATH=/app
     volumes:
       - .:/app
-      - {{ cookiecutter.system }}python-cache:/home/vscode/.cache
+      - {{ cookiecutter.system }}-python-cache:/home/vscode/.cache
     ports:
       - "8000:8000"
       - "5000:5000"
