@@ -28,7 +28,7 @@ services:
       - "8000:8000"
       - "5000:5000"
     working_dir: /app
-    command: sleep infinity
+    command: "/bin/sh -c 'sudo chown -R vscode:vscode /home/vscode && exec sleep infinity'"
 
   db:
     image: postgres:17
