@@ -13,7 +13,7 @@
   ],
 
   // Port forwarding with auto-open
-  "forwardPorts": [8000, 5000, 5432, 6379],
+  "forwardPorts": [8000, 5000, "db:5432", "redis:6379"],
   "portsAttributes": {
     "8000": {
       "label": "Python App",
