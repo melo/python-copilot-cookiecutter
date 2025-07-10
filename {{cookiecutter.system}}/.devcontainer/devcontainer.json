@@ -9,7 +9,8 @@
   "mounts": [
     "source={{ cookiecutter.system }}-vscode-extensions,target=/home/vscode/.vscode-server/extensions,type=volume",
     "source={{ cookiecutter.system }}-vscode-extensions-insiders,target=/home/vscode/.vscode-server-insiders/extensions,type=volume",
-    "source={{ cookiecutter.system }}-devcontainer-cache,target=/home/vscode/.cache,type=volume"
+    "source={{ cookiecutter.system }}-devcontainer-cache,target=/home/vscode/.cache,type=volume",
+    "source=${localWorkspaceFolder},target=/app,type=bind"
   ],
 
   // Port forwarding with auto-open
