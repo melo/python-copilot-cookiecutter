@@ -110,11 +110,31 @@
           "debug.overrideEngine": "claude-sonnet-4"
         },
 
+        "github.copilot.chat.agent.terminal.allowList": {
+          "/.*/": true
+        },
+
         // Copilot Workspace configuration (disable permission prompts)
         "github.copilot.chat.experimental.commandExecution.enabled": true,
         "github.copilot.chat.experimental.commandExecution.confirmBeforeExecution": false,
         "github.copilot.chat.experimental.terminal.enabled": true,
-        "github.copilot.chat.experimental.terminal.confirmBeforeExecution": false
+        "github.copilot.chat.experimental.terminal.confirmBeforeExecution": false,
+
+        // Copilot Agent Mode configuration (disable all confirmation prompts)
+        "github.copilot.chat.experimental.agent.enabled": true,
+        "github.copilot.chat.experimental.agent.confirmBeforeExecution": false,
+        "github.copilot.chat.experimental.agent.fileOperations.enabled": true,
+        "github.copilot.chat.experimental.agent.fileOperations.confirmBeforeExecution": false,
+        "github.copilot.chat.experimental.agent.terminalOperations.enabled": true,
+        "github.copilot.chat.experimental.agent.terminalOperations.confirmBeforeExecution": false,
+        "github.copilot.chat.experimental.agent.workspaceOperations.enabled": true,
+        "github.copilot.chat.experimental.agent.workspaceOperations.confirmBeforeExecution": false,
+
+        // Additional Copilot settings for seamless agent operation
+        "github.copilot.chat.experimental.codeGeneration.enabled": true,
+        "github.copilot.chat.experimental.codeGeneration.confirmBeforeExecution": false,
+        "github.copilot.chat.experimental.fileSystemOperations.enabled": true,
+        "github.copilot.chat.experimental.fileSystemOperations.confirmBeforeExecution": false
       },
 
       "extensions": [
