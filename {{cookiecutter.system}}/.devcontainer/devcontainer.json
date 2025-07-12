@@ -41,7 +41,7 @@
         // Python configuration
         "python.defaultInterpreterPath": "/app/.venv/bin/python",
         "python.terminal.activateEnvironment": false,
-        
+
         // Linting and formatting
         "python.linting.enabled": true,
         "python.linting.ruffEnabled": true,
@@ -51,18 +51,18 @@
           "source.organizeImports": "explicit",
           "source.fixAll.ruff": "explicit"
         },
-        
+
         // Type checking
         "python.analysis.typeCheckingMode": "basic",
         "python.analysis.autoImportCompletions": true,
         "python.analysis.autoSearchPaths": true,
-        
+
         // Testing
         "python.testing.pytestEnabled": true,
         "python.testing.unittestEnabled": false,
         "python.testing.autoTestDiscoverOnSaveEnabled": true,
         "python.testing.pytestArgs": ["--no-header", "--tb=short", "-q"],
-        
+
         // Terminal
         "terminal.integrated.defaultProfile.linux": "bash",
         "terminal.integrated.profiles.linux": {
@@ -71,7 +71,7 @@
             "args": ["-l"]
           }
         },
-        
+
         // Files
         "files.associations": {
           "*.env*": "dotenv"
@@ -82,7 +82,7 @@
           "**/.mypy_cache": true,
           "**/.ruff_cache": true
         },
-        
+
         // Database connections
         "sqltools.connections": [
           {
@@ -95,7 +95,7 @@
             "password": "${POSTGRES_PASSWORD}"
           }
         ],
-        
+
         // GitHub Copilot configuration
         "github.copilot.enable": {
           "*": true,
@@ -109,42 +109,42 @@
         "github.copilot.advanced": {
           "debug.overrideEngine": "claude-sonnet-4"
         },
-        
+
         // Copilot Workspace configuration (disable permission prompts)
         "github.copilot.chat.experimental.commandExecution.enabled": true,
         "github.copilot.chat.experimental.commandExecution.confirmBeforeExecution": false,
         "github.copilot.chat.experimental.terminal.enabled": true,
         "github.copilot.chat.experimental.terminal.confirmBeforeExecution": false
       },
-      
+
       "extensions": [
         // Core Python
         "ms-python.python",
         "ms-python.vscode-pylance",
         "ms-python.debugpy",
-        
+
         // Code quality
         "charliermarsh.ruff",
         "ms-python.mypy-type-checker",
-        
+
         // Testing and debugging
         "ms-python.pytest",
-        
+
         // Data science (optional)
         "ms-toolsai.jupyter",
-        
+
         // Database tools
         "mtxr.sqltools",
         "mtxr.sqltools-driver-pg",
-        
+
         // Git and collaboration
         "eamodio.gitlens",
         "github.copilot",
         "github.copilot-chat",
-        
+
         // Docker
         "ms-azuretools.vscode-docker",
-        
+
         // Productivity
         "bradlc.vscode-tailwindcss",
         "ms-vscode.vscode-json",
