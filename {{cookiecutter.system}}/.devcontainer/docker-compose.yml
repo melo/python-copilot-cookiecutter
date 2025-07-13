@@ -20,7 +20,7 @@ services:
       - DATABASE_URL=postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@db:5432/${POSTGRES_DB:-{{ cookiecutter.system }}}
       - REDIS_URL=redis://redis:6379/0
       - DEBUG=True
-      - PYTHONPATH=/app
+      - PYTHONPATH=/app:/app/src
     volumes:
       - .:/app
       - {{ cookiecutter.system }}-python-cache:/home/vscode/.cache
